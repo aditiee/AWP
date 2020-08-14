@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    align-items: center;
+    height: 700px;
+    background: #ececec;
+}
+.Page{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    background: url("img.jpg") fixed;
+    width: 400px;
+    height:100%;
+}
+.header{
+    background-color: teal;
+    color: #fff;
+    padding: 0 5%;
+    padding-top: 5px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.Header-left{
+    display: flex;
+    align-items: center;
+}
+.Header-left img{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+.header i{
+    border-radius: 50%;
+    padding: 8px 9px;
+    
+}
+.header i:hover{
+    border-radius: 50%;
+    padding: 8px 9px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.main-body{
+    display: flex;
+}
+.left-panel{
+    flex: 1;
+}
+.right-panel{
+    flex: 3;
+    padding: 20px;
+}
+#comment-section{
+    height: 550px;
+    margin-top: -5.9%;
+    margin-bottom: -6%;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+input[type = "text"]{
+    padding: 10px 20px;
+    width: 20em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+}
+::-webkit-input-placeholder{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+.input-class{
+    display: flex;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    border-radius: 0 0 10px 10px;
+    
+}
+.input-class i{
+    border-radius: 50%;
+    padding: 3px 3px;
+    font-size: 30px;
+}
+.input-class button{
+    background-color: teal;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+    padding-right: 2px;
+    color: #fff;
+    margin-left: 5px;
+}
+.input-class button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 128, 128, 0.7);
+}
+.user-text{  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 20em;
+}
+.user-text p{
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: rgb(120, 224, 143); 
+    border-radius: 5px 25px 25px 25px; 
+}
+.send-time{
+    font-size: 13px;
+    margin-top: -3%;
+    margin-left: 5%;
+    color: #747171;
+}

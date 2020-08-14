@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Raleway:wght@400;600;800&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6dec5b11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./whatsapp.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="Page">
+        <div class="header">
+            <div class="Header-left">
+                <a href="#"><i class="fas fa-arrow-left" style="color: white;"style="color: white;"></i></a>
+                <a href="#"><img src="user2.jpg" alt=""></a>
+                <h3>Aditi Gudadhe </h3>
+            </div>
+            <div class="Header-left">
+                <a href="#"><i class="fas fa-video" style="color: white;"></i></a> 
+                <a href="#"><i class="fas fa-phone-alt" style="color: white;"></i></a> 
+                <a href="#"><i class="fas fa-ellipsis-v" style="color: white;"></i></a> 
+            </div>  
+
+        </div>
+        <div class="main-body">
+
+            <div class="right-panel">
+                <div id="comment-section">
+                     <!--<p>
+                         <sub >-->
+                </div>
+
+            </div>
+        </div>
+        <div class="input-class">
+           <a href="#"><i class="far fa-grin-alt" style="color: white;"></i></a> 
+                        <input id="input-text" type="text" placeholder="Type a message..."/></i>
+            <button id="send" onclick="enterChat()"><i class="fas fa-paper-plane" style="font-size: 15px;"></i></button>
+        </div>
+    </section>
+</body>
+<script>
+    var userChat = document.getElementById('input-text');
+    var commentBox = document.getElementById('comment-section');
+
+   
+
+    function enterChat(){
+
+        var currDate = ("" + new Date()).split("GMT");
+        var str = currDate;
+        var parent = document.createElement('div');
+        parent.setAttribute('class', 'user-text');
+
+        var child = document.createElement('p');
+        child.innerText = userChat.value;
+
+        var child2 = document.createElement('sub');
+        child2.setAttribute('class', 'send-time');
+        child2.innerText = str[0];
+
+        if(userChat.value != ""){
+            userChat.value = "";
+
+            parent.appendChild(child);
+            parent.appendChild(child2);
+
+            commentBox.append(parent);
+        }
+    }
+</script>
+</html>
