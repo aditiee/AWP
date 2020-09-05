@@ -1,0 +1,45 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    align-items: center;
+    height: 500px;
+    background: #ececec;
+}
+.Page{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    background:url('img2.jpg') no-repeat;
+    width: 400px;
+    height:100%;
+    border-radius: 5%;
+}
+
+.header{
+  
+    color: #fff;
+    padding: 0 5%;
+    padding-top: 5px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+input[type = "text"]{
+    padding: 5px;
+    width: 20em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    
+}
+#parent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
